@@ -1,0 +1,83 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales del cuerpo */
+body {
+    background-color: #d5e1f0;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.2rem; /* Se corrigió la coma en "1, 2rem" */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-weight: 700;
+    /* width: 100%; */
+}
+
+/* Contenedor principal */
+.container {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+/* Imagen */
+img {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+/* Información del código QR */
+.qr-code-info {
+    width: 300px;
+    text-align: center;
+}
+
+/* Título dentro de la información del código QR */
+.qr-code-info h3 {
+    margin: 15px 0px;
+}
+
+.qr-code-info p {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 15px;
+    padding: 0 28px;
+}
+
+/* Media Query para dispositivos más grandes */
+@media (min-width: 760px) {
+    html,
+    body {
+        min-width: 375px; /* Esto evita que la página se vea más pequeña que en móvil */
+    }
+
+    .container {
+        max-width: 400px; /* Un poco más grande en pantallas medianas */
+    }
+
+    .qr-code-info p {
+        font-size: 1rem; /* Aumentar el tamaño del texto para mayor legibilidad */
+        padding: 0 30px; /* Mejorar los márgenes de los párrafos */
+    }
+}
+
+/* Media Query para escritorios grandes */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 500px; /* Ajustar para pantallas de escritorio */
+    }
+}

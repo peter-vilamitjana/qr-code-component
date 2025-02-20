@@ -1,0 +1,5 @@
+# Evitar archivos innecesarios en macOS
+.DS_Store
+
+# Evitar archivos de configuración de Prettier
+.prettierignore
